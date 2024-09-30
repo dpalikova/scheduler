@@ -116,6 +116,7 @@ export default function Schedule() {
 
   useEffect(() => {
     calculateDates();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [startDate, endDate]);
 
   const calculateDates = () => {

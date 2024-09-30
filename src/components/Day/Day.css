@@ -1,0 +1,98 @@
+.day {
+  text-align: center;
+  width: 100%;
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  p:first-of-type {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  p:last-of-type {
+    margin: 0 0 1rem;
+  }
+
+  .timesContainer {
+    background-color: #f5f5f5;
+    height: 20rem;
+    transition: all 200ms;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+
+    &:hover {
+      background-color: #d8d8d8;
+
+      .addTimerBtn {
+        display: block;
+      }
+    }
+    
+    .addTimerBtn,
+    .time,
+    .submitTime,
+    .timeInput {
+      padding: 1rem;
+      font-size: 1.3rem;
+      text-transform: capitalize;
+    }
+
+    .submitTime {
+      background-color: #5c5c5c;
+      color: white;
+    }
+
+    .addTimerBtn {
+      background-color: #5c5c5c;
+      color: white;
+      display: none;
+      transition: background-color 300ms ease-in-out;
+    }
+
+    .addTimerBtn:hover {
+      background-color: #6e6d6d;
+    }
+
+    .time {
+      border: solid 1px var(--primary-color);
+      color: var(--primary-color);
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+    
+      &:hover {
+        .removeTime {
+          display: block;
+          
+          &:hover {
+            background-color: red;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .removeTime {
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.1rem;
+      display: none;
+      transition: background-color 300ms ease-in-out;
+    }
+
+    ul {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+    }
+  }
+}

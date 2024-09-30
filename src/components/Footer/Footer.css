@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.footer button {
+  width: 10rem;
+  padding: 1rem;
+}
+
+.footer button {
+  color: #fff;
+  background-color: #000;
+  border-style: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer button:nth-child(2) {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.footer button:nth-child(2):hover {
+  background-color: var(--primary-color-hover);
+}
